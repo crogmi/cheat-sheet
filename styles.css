@@ -1,0 +1,41 @@
+* {
+    font-family: Helvtica;
+}
+
+body {
+    background-color: white;
+}
+h1 {
+    color: black;
+}
+
+table {
+    border: solid black 0.5px;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+td {
+    border: solid black 0.5px;
+    border-collapse: collapse;
+}
+
+thead {
+    color: white;
+    background-color: darkcyan;
+    text-align: left;
+    font-size: 18px;
+}
+
+.table-subsection {
+    color: white;
+    background-color: darkblue;
+    text-align: left;
+    font-size: 14px;
+}
+
+.information {
+    color: black;
+    text-align: left;
+    font-size: 14px;
+}
