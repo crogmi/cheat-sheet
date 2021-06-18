@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
-        <h1>HTML / CSS Cheat Sheet</h1>
+        <h1>HTML/CSS Cheat Sheet</h1>
     </head>
     <body>
         <table>
@@ -17,39 +17,89 @@
                 <tr class ="row table-subsection">
                     <td colspan="3">HTML</td>
                 </tr>
-                <tr class="row information">
-                    <td>Topic 1</td>
-                    <td>Placeholder 1</td>
-                    <td>Placeholder 1</td>
-                </tr>
-                <tr class="row information">
-                    <td>Topic 2</td>
-                    <td>Placeholder 2</td>
-                    <td>Placeholder 2</td>
-                </tr>
-                <tr class="row information">
-                    <td>Topic 3</td>
-                    <td>Placeholder 3</td>
-                    <td>Placeholder 3</td>
-                </tr>
+                    <tr class="row information">
+                        <td><code>&lt;h1&gt; to &lt;h6&gt;</code></td>
+                        <td>Represents header elements and can be used for titles or subtitles throughout the web page</td>
+                        <td><code>&lt;h1&gt;The Title of This Web Page&lt;/h1&gt;</code></td>
+                    </tr>
+                    <tr class="row information">
+                        <td><code>&lt;img&gt;</code></td>
+                        <td>Inserts an image element into HTML with the source and the alternative text (in case the image does not load). Image elements do not require a closing tag</td>
+                        <td><code>&lt;img src="[URL]" alt="[alternative text]"&gt;</code></td>
+                    </tr>
+                    <tr class="row information">
+                        <td><code>&lt;a&gt;</code></td>
+                        <td>Links a reference outside or within the web page</td>
+                        <td><code>&lt;a href="[URL]"&gt;[Text used to serve as the link]&gt;&lt;/a&gt;</code></td>
+                    </tr>
+                    <tr class="row information">
+                        <td><code>&lt;button&gt;</code></td>
+                        <td>Serves as a button that operates its defined function, such as a submit button</td>
+                        <td><code>&lt;button type="submit"&gt;Submit&lt;/button&gt;</code></td>
+                    </tr>
+                    <tr class="row information">
+                        <td><code>&lt;input&gt;</code></td>
+                        <td>Can be used for radio and checkbox buttons</td>
+                        <td><code>&lt;label for "[text]"&gt; &lt;input id="[text]" type="radio" value="[text]" name="[text consistent across all inputs]"&gt;[Text]
+                &lt;/label&gt;</code></td>
+                    </tr>
+                    <tr class="row information">
+                        <td><code>&lt;div&gt;</code></td>
+                        <td>Serves as a general purpose container and divider. Should not replace semantic elements.</td>
+                        <td><code>&lt;div class="[class name]&gt;&lt;/div&gt;</code></td>
+                    </tr>
                 <tr class="row table-subsection">
                     <td colspan="3">CSS</td>
-                </tr>
-                <tr class="row information">
-                    <td>Topic 1</td>
-                    <td>Placeholder 1</td>
-                    <td>Placeholder 1</td>
-                </tr>
-                <tr class="row information">
-                    <td>Topic 2</td>
-                    <td>Placeholder 2</td>
-                    <td>Placeholder 2</td>
-                </tr>
-                <tr class="row information">
-                    <td>Topic 3</td>
-                    <td>Placeholder 3</td>
-                    <td>Placeholder 3</td>
-                </tr>
+                    </tr>
+                    <tr class="row information">
+                        <td>*</td>
+                        <td>Represents the universal selector to apply CSS to all elements in the web page</td>
+                        <td>
+                            <code>
+                                * {
+                                    font-family: Verdana;
+                                }
+                            </code>
+                        </td>
+                    </tr>
+                    <tr class="row information">
+                        <td>class</td>
+                        <td>Classifies an element within the specified class. Prepend class name with a . within CSS.</td>
+                        <td>
+                            <code>
+                                .element-class {
+                                    font-size: 16px;
+                                }
+                            </code>
+                        </td>
+                    </tr>
+                    <tr class="row information">
+                        <td>id</td>
+                        <td>Classifies an element within the specified id. An element's id can only have a single value and only be used once per page. Prepend an id name with a # within CSS.</td>
+                        <td>
+                            <code>
+                                #element-id {
+                                    font-weight: bold;
+                                }
+                            </code>
+                        </td>
+                    </tr>
+                    <tr class="row information">
+                        <td>Pseudo-class selectors</td>
+                        <td>Factors such as the interaction, site navigation, and position in the DOM can all give elements a different state with pseudo-class.</td>
+                        <td>:fact, :visited, :disabled, :active, and :hover</td>
+                    </tr>
+                    <tr class="row information">
+                        <td>!important</td>
+                        <td>Can be applied to specific declarations. It will override any style no matter how specific it is. It should almost never be used as it is hard to overwrite.</td>
+                        <td>
+                            <code>
+                                #element-id {
+                                    font-weight: bold !important;
+                                }
+                            </code>
+                        </td>
+                    </tr>
             </tbody>
         </table>
     </body>
